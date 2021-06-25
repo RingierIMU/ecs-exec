@@ -1,0 +1,5 @@
+.vscode
+Pipfile*
+ecs_exec.egg-info
+build
+dist
