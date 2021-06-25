@@ -1,13 +1,10 @@
-import subprocess
-import boto3
 import argparse
-import logging
+import boto3
 import json
+import logging
+import subprocess
 from subprocess import check_call
 
-# import os
-
-# _script_name = os.path.basename(__file__)
 _script_name = "ecs-exec"
 _service = "ecs"
 
