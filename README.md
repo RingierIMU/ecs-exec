@@ -31,7 +31,7 @@ $ terraform output -json custom_ecs_service > custom_ecs_service.json
 ```
 Now you can run your command inside a specific container
 ```bash
-ecs-exec --file output.json --container php-fpm --command bash
+AWS_PROFILE=staging ecs-exec --file custom_ecs_service.json --container php-fpm --command bash
 ```
 If you do not know the container name upfront then not supplying the container will print out valid container names.
 
